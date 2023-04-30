@@ -1,0 +1,10 @@
+[Unit] 
+  Description=LED
+  After=multi-user.target 
+  
+  [Service] 
+  Type=idle 
+  ExecStart=/usr/bin/python3 /opt/python/led.py
+  
+  [Install] 
+  WantedBy=multi-user.target
